@@ -1,0 +1,31 @@
+{
+  "name": "gulp-edit-file",
+  "version": "1.0.0",
+  "description": "Edit file content in gulp pipe method. 一个在gulp的管道方法中修改文件内容的插件。",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CN-Tower/gulp-edit-file.git"
+  },
+  "keywords": [
+    "gulp-edit-file",
+    "gulp-file-editor",
+    "gulp-eidt",
+    "gulp-modify",
+    "gulp-change",
+    "gulp-plugin"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CN-Tower/gulp-edit-file/issues"
+  },
+  "homepage": "https://github.com/CN-Tower/gulp-edit-file#readme",
+  "dependencies": {
+    "gulp-util": "^3.0.8",
+    "through2": "^4.0.2"
+  }
+}
