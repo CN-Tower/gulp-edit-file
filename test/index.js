@@ -12,7 +12,7 @@ gulp.task('clean', () => {
 gulp.task('edit', () => {
   return gulp
     .src('test/src/index.js')
-    .pipe(editFile((content, fileName) => {
+    .pipe(editFile(content => {
       return `${greetings}${content}`;
     }))
     .pipe(gulp.dest('test/dist'));
