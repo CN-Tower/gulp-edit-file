@@ -1,2 +1,2 @@
-declare const editFile: (content: string, fileName: string) => string;
+declare function editFile(editor: (content: string, fileName: string) => string): void;
 export default editFile;

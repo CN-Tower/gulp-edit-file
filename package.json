@@ -1,6 +1,6 @@
 {
   "name": "gulp-edit-file",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Edit file content in gulp pipe method. 一个在gulp的管道方法中修改文件内容的插件。",
   "main": "index.js",
   "scripts": {

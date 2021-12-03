@@ -8,10 +8,10 @@ const PluginError = gutil.PluginError;
  * @param {*} write 
  * @returns 
  */
-const gulpEditFile = editHandler => through.obj(function(file, enc, cb) {
+const editFile = editHandler => through.obj(function(file, enc, cb) {
   if (file.isNull()) {
     this.push(file);
-    cb();
+    return cb();
   }
   if (file.isStream()) {
     this.emit('error', new PluginError('gulp-comment', 'Streaming not supported'));
@@ -22,4 +22,4 @@ const gulpEditFile = editHandler => through.obj(function(file, enc, cb) {
   this.push(file);
   cb();
 });
-module.exports = gulpEditFile;
+module.exports = editFile;
