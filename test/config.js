@@ -1,0 +1,1 @@
+exports.greetings = '/*!\n * Hello there!\n */\n';

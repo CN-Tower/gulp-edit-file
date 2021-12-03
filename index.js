@@ -1,5 +1,6 @@
 const gutil = require('gulp-util');
 const through = require('through2');
+const path = require('path');
 
 const PluginError = gutil.PluginError;
 
@@ -17,7 +18,15 @@ const editFile = editHandler => through.obj(function(file, enc, cb) {
     this.emit('error', new PluginError('gulp-comment', 'Streaming not supported'));
     return cb();
   }
-  const newContent = editHandler(file.contents.toString(), file.basename);
+  const { dir, base, ext, name } = path.parse(file.path);
+  const newContent = editHandler(file.contents.toString(), {
+    dirName: path.basename(dir),
+    dirPath: dir,
+    fileBase: name,
+    fileExt: ext,
+    fileName: base,
+    filePath: file.path,
+  });
   file.contents = Buffer.from(newContent);
   this.push(file);
   cb();

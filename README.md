@@ -19,7 +19,7 @@ gulp.task('edit', () => {
     .pipe(editFile((content, fileName) => {
       return `/*!\n * Hello there!\n */${content}`;
     }))
-    .pipe(gulp.dest('dist')),
+    .pipe(gulp.dest('dist'));
 });
 ```
 
