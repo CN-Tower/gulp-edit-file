@@ -1,6 +1,6 @@
 # gulp-edit-file
 
-[![npm](https://img.shields.io/npm/v/vite-plugin-modules.svg)](https://www.npmjs.com/package/gulp-edit-file) 
+[![npm](https://img.shields.io/npm/v/gulp-edit-file.svg)](https://www.npmjs.com/package/gulp-edit-file) 
 
 > Edit file content in gulp pipe method.
 > 一个在gulp的管道方法中修改文件内容的插件。
